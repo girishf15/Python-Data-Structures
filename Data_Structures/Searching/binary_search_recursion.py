@@ -1,8 +1,9 @@
 #__author__ = girish
 
+
 def binary_search(arr, start, end, x):
 
-    if end >= start:
+    if start <= end:
 
         mid = start + (end - start) // 2
 
@@ -15,12 +16,12 @@ def binary_search(arr, start, end, x):
     else:
         return -1
 
+
 arr = [10, 20, 30, 40, 50, 60, 70, 80]
 
-result = binary_search(arr, 0, len(arr) - 1, 55)
+result = binary_search(arr, 0, len(arr) - 1, 50)
 
 if result != -1:
     print("Element is present at index %s" % result)
 else:
     print("Element is not present in array")
-
